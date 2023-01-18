@@ -12,6 +12,9 @@
             padding: 0;
             box-sizing: border-box;
         }
+        body i , body button{
+            cursor: pointer;
+        }
         .nav{
             width: 100%;
             height: 80px;
@@ -79,7 +82,6 @@
         .ads{
             display: grid;
             grid-template-columns: repeat(2,1fr);
-            /* border: 1px solid; */
             margin-top: 20px;
             margin-bottom: 30px;
             gap: 20px;
@@ -109,8 +111,8 @@
             background-color: #f5f5f5;
         }
         .pic-ads > .heading{
-            display: block;
-           text-align: justify;
+          display: block;
+          text-align: justify;
           margin: auto 0px auto 50px;
          
         }
@@ -247,12 +249,7 @@
         gap: 15px;
         padding: 20px;
         justify-content: center;
-       }
-       .ads2 > div{
-        width: 100%;
         text-align: center;
-        margin: auto;
-        
        }
        .ads2 > div > img{
         width: 100%;
@@ -275,7 +272,7 @@
        .footer{
             background-color: black;
             padding: 30px 50px;
-            margin-top: 0px;
+            margin-top: 30px;
        }
        .footer > .top-part{
         display: grid;
@@ -284,6 +281,7 @@
        .top-part >div> h2 , .top-part >div> p {
         color: white;
         margin-bottom: 10px;
+        text-underline-position: inherit;
        }
        .top-part > div > button{
         padding: 10px 20px;
@@ -316,6 +314,47 @@
             border-bottom-style: solid;
             width: fit-content;
        }
+      .social-media > h3 , .payment > h3{
+        color: white;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      .social-media > i{
+        background-color:black;
+        color: white;
+        font-size: 30px;
+        padding-bottom: 5px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+      }
+      .social-media > i:hover{
+        border-bottom: 4px solid;
+      }
+      .payment > img{
+        width: 40px;
+        margin-right: 5px;
+        margin-bottom: 10px;
+        cursor: pointer;
+      }
+      .android-mac{
+        width: 40%;
+        margin-top: 20px;
+      }
+      .android-mac >img:hover{
+        border-bottom: 4px solid gray;
+
+      }
+      .android-mac > img{
+        margin-bottom: 10px;
+        cursor: pointer;
+      }
+      .last-logo{
+        width: 150px;
+      }
+      .last-logo >img:hover{
+        border-bottom: 5px solid;
+        border-bottom-color: gray;
+      }
     </style>
 </head>
 <body>
@@ -545,12 +584,32 @@
                 <a href="#">Start a Return/Exchange</a>
             </div>
             <div>
-                <div>
+                <div class="social-media">
                     <h3>SOCIAL</h3>
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    
                 </div>
-                <div>
+                <div class="payment">
                     <h3>PAYMENT METHODS</h3>
+                    <img src="https://images.footlocker.com/content/dam/final/footlockereurope/Online_activations/backpages/ic_amex.png" alt="">
+                    <img src="https://images.footlocker.com/content/dam/final/footlockereurope/Online_activations/backpages/ic_discover.png" alt="">
+                    <img src="https://images.footlocker.com/content/dam/final/footlockereurope/Online_activations/backpages/ic_mastercard.png" alt="">
+                    <img src="https://images.footlocker.com/content/dam/final/footlockereurope/Online_activations/backpages/ic_paypal.png" alt="">
+                    <img src="https://images.footlocker.com/content/dam/final/footlockereurope/Online_activations/backpages/ic_visa_b.png" alt="">
+                    <img src="https://images.footlocker.com/content/dam/final/footlockereurope/Online_activations/backpages/ic_klarna.png" alt="">
+                    <img src="https://images.footlocker.com/content/dam/final/pdp/SupportFiles/L/LOGO-APPLEPAY/LOGO-APPLEPAY_a1.png" alt="">
+                    <img src="https://images.footlocker.com/content/dam/final/pdp/SupportFiles/L/LOGO-GOOGLEPAY2/LOGO-GOOGLEPAY2_a1.png" alt="">
                 </div>
+                <div class="android-mac">
+                    <img src="https://www.footlocker.com/built/252/images/shared/ic_logo_AppStore.svg" alt="">
+                    <img src="https://www.footlocker.com/built/252/images/shared/ic_logo_GooglePlay.svg" alt="">
+                </div>
+            </div>
+            <div class="last-logo">
+                <img src="https://www.footlocker.com/built/252/images/FL/logo.svg" alt="">
             </div>
         </div>
     </div>
