@@ -213,8 +213,8 @@
             display: grid;
             grid-template-columns: repeat(2,1fr);
             background-color: #f5f5f5;
-            border: 1px solid;
-            
+           
+            margin: 40px 0px;
         }
         .pic-ads2 > .heading{
             display: block;
@@ -238,13 +238,91 @@
             padding: 12px 20px;
             background-color: black;
             color: white;
+            border-radius: 5px;
+        }
+        .pic-ads2 > .heading > button:hover{
+            font-size: 17px;
         }
         .pic-ads2 > .heading > button >span{
             margin-left: 20px;
         }
-        .pic-ads2 > .pic > img{
-           max-width: 60%;
-        }
+       .ads2{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 15px;
+        padding: 20px;
+        justify-content: center;
+       }
+       .ads2 > div{
+        width: 100%;
+        text-align: center;
+        margin: auto;
+        
+       }
+       .ads2 > div > img{
+        width: 100%;
+        margin-bottom: 10px;
+       }
+       .ads2 > div > h1 , .ads2 > div > p{
+        width: 80%;
+        /* border: 1px solid; */
+        margin-bottom: 15px;
+        margin-left: 10%;
+       }
+       .ads2 > div > span{
+        margin-right: 10px;
+        border-bottom: solid;
+        padding-bottom: 10px;
+        
+       }
+       .ads2 > div > span:hover {
+        border-width: 5px;
+       }
+       .footer{
+            background-color: black;
+            padding: 30px 50px;
+            margin-top: 0px;
+       }
+       .footer > .top-part{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+       }
+       .top-part >div> h2 , .top-part >div> p {
+        color: white;
+        margin-bottom: 10px;
+       }
+       .top-part > div > button{
+        padding: 10px 20px;
+        border: 1px solid white;
+        background-color: rgb(0, 0, 0);
+        color: rgb(237, 233, 233);
+        margin-top: 20px;
+       }
+       .top-part > div > button:hover{
+        border-bottom: 3px solid white;
+       }
+       .footer > .bottom-part{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+       }
+       .footer > .bottom-part >div{
+        margin-top: 20px;
+       }
+       .footer > .bottom-part > div > h3{
+        color: white;
+        margin: 20px 0px;
+       }
+       .footer > .bottom-part > div > a{
+        display:block;
+        
+        margin-bottom: 14px;
+        color: white;
+        text-decoration: none;
+       }
+       .footer > .bottom-part > div > a:hover{
+            border-bottom-style: solid;
+            width: fit-content;
+       }
     </style>
 </head>
 <body>
@@ -380,7 +458,107 @@
             <button>SHOP KIDS ADIDAS  <span> ></span></button>
         </div>
         <div class="pic">
-            <img src="https://images.footlocker.com/content/dam/final/footlocker/site/homepage/2023/january/230117-fl-homepage-kids-adidas-m-1up.jpg" alt="">
+            <img src="https://images.footlocker.com/content/dam/final/footlocker/site/homepage/2023/january/230117-fl-hp-winter-essentials-m-asp.jpg" alt="">
+        </div>
+    </div>
+    <div class="ads2">
+        <div class="sub-ads">
+            <img src="https://images.footlocker.com/content/dam/final/flx/site/homepage/2022/november/221104-flx-hp-v3-3up-fl.jpg" alt="">
+            <h1>New FLX Rewards & Sweepstakes</h1>
+            <p>Use XPoints for exclusive new prizes, like a drone, Bluetooth turntable, Raycon speaker & SO much more!</p>
+            <span>JOIN FLX REWARDS
+            </span>
+            <span>REDEEM NOW</span>
+        </div>
+        <div class="sub-ads">
+            <img src="https://images.footlocker.com/content/dam/final/footlocker/site/homepage/2023/january/230111-fl-hp-permanent-3up.jpg" alt="">
+            <h1>Unbeatable Fan Styles</h1>
+            <p>Show up and show off the love for your team in these winning fits from our fan shop.</p>
+            <span>EXPLORE THE FAN SHOP </span>
+            
+        </div>
+        <div class="sub-ads">
+            <img src="https://images.footlocker.com/content/dam/final/footlocker/site/homepage/2022/december/221227-fl-p3up-hoh-3up.jpg" alt="">
+            <h1>House of Hoops</h1>
+            <p>House of Hoops by Foot Locker is an ode to basketball. A home for premium kicks from Nike, Jordan and Converse, that’s built by the game.</p>
+            <span>ENTER HOUSE OF HOOPS</span>
+           
+        </div>
+    </div>
+    <div class="footer">
+        <div class="top-part">
+            <div>
+                <h2>Email Gift Cards</h2>
+                <p>Valid online and at any Foot Locker Inc. brand</p>
+                <button>BUY EMAIL GIFT CARD</button>
+            </div>
+            <div>
+                <h2>Rewards Program</h2>
+                <p>Get free shipping, rewards, and more with FLX</p>
+                <button>FLX DETAILS</button>
+            </div>
+            <div>
+                <h2>Sign Up For Emails</h2>
+                <p>Stay in the loop, wherever you go</p>
+                <button>SIGN UP FOR EMAILS</button>
+            </div>
+            <div>
+                <h2>Mobile App</h2>
+                <p>Get ahead of the game with on-the-go shopping</p>
+                <button>MOBILE APP DETAILS</button>
+            </div>
+        </div>
+        <div class="bottom-part">
+            <div>
+                <h3>ABOUT FOOTER LOCKER</h3>
+                <a href="#">About Us</a>
+                <a href="">Accessibility Statement</a>
+                <a href="#">Career Opportunities</a>
+                <a href="#">Pages Sitemap</a>
+                <a href="#">Products Sitemap 1</a>
+                <a href="#">Products Sitemap 2</a>
+                <a href="#">Products Sitemap 3</a>
+                <a href="#">Privacy Statement</a>
+                <a href="#">Do Not Sell or Share my Personal Information</a>
+                <a href="#">Limit the Use of my Sensitive Personal Data</a>
+                <a href="#">Ad Choices</a>
+                <a href="#">Terms Of Use</a>
+            </div>
+            <div>
+                <h3>CUSTOMER SERVICE</h3>
+                <a href="#">Contact Us</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Ordering Help</a>
+                <a href="#">Order Status</a>
+                <a href="#">Shipping Info</a>
+                <a href="#">Store Pick Up</a>
+                <a href="#">Returns-Exchanges</a>
+                <a href="#">Help</a>
+                <a href="#">COVID-19 Information</a>
+                <a href="#">Check Gift Card Balance</a>
+            </div>
+            <div>
+                <h3>QUICK LINKS</h3>
+                <a href="#">Store Locator</a>
+                <a href="#">Text Sign Up</a>
+                <a href="#">Launch 101</a>
+                <a href="#">Klarna</a>
+                <a href="#">Coupons</a>
+                <a href="#">Affiliates</a>
+                <a href="#">Fit Guarantee</a>
+                <a href="#">Military Discount</a>
+                <a href="#">Student Discount</a>
+                <a href="#">Release Calendar</a>
+                <a href="#">Start a Return/Exchange</a>
+            </div>
+            <div>
+                <div>
+                    <h3>SOCIAL</h3>
+                </div>
+                <div>
+                    <h3>PAYMENT METHODS</h3>
+                </div>
+            </div>
         </div>
     </div>
 </body>
