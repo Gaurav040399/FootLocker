@@ -122,7 +122,7 @@
             justify-content: space-between;
             padding: 0px 15px;
         }
-        .nav > img{
+        .nav >img{
             width: 5%;
             border-radius: 50%;
             align-items: center;
@@ -166,7 +166,7 @@
   </head>
   <body>
     <div class="nav">
-        <img src="./_ Circle Round Minimal Initials Photography Logo Video.gif" alt="">
+       <img src="./_ Circle Round Minimal Initials Photography Logo Video.gif" alt="">
 
         <div class="section">
             <a href="">NEW ARRIVALS</a>
@@ -236,11 +236,10 @@
             if(userName == el.UserName){
                 if(password == el.Password){
                     alert("Sign in Seccessful");
+                    window.location.href="./index.html"
                 }else{
                     alert("Password Invalid");
                 }
-            }else{
-                alert("Username Invalid");
             }
            })
         })

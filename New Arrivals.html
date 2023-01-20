@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Arrival</title>
+    <script src="https://kit.fontawesome.com/8f8488f52c.js" crossorigin="anonymous"></script>
+    <style>  
+     *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: #90A4AE;
+    }
+    body i , body button{
+        cursor: pointer;
+    }
+    .nav{
+        width: 100%;
+        height: 80px;
+        border: 1px solid;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 15px;
+    }
+    .nav > img{
+        width: 5%;
+        border-radius: 50%;
+        align-items: center; 
+        border: 2px solid white;
+    }
+
+    .sec{
+        color: white;
+    }
+    .search{
+        background-color: #fff;
+    }
+    .search-icon{
+        display: flex;
+        align-items: center;
+    }
+    .search > input{
+        font-size: 10px;
+        padding: 5px 10px;
+        border-radius: 16px;
+        border: none;
+       
+    }
+    .search > input::placeholder{
+        font-size: 15px;
+    }
+    .search >a> i{
+        background-color: white;
+        font-size: 15px;
+        padding: 10px;
+       
+    }
+    .icon{
+        background-color:black;
+        color: white;
+        margin-left: 10px;
+    }
+    .icon >a> i{
+        margin: 8px;
+        font-size: 20px;
+        padding-bottom: 6px;
+        color: whitesmoke;
+    }
+    .icon >a> i:hover{
+        color:maroon;
+        border-bottom: 5px solid white;
+    }
+    .section > a{
+        text-decoration: none;
+        color: white;
+        margin-right: 10px;
+        font-size: 17px;
+        padding-bottom: 6px;
+    }
+    .section > a:hover{
+        color: bisque;
+        border-bottom: 2px solid yellowgreen;
+    }
+    @media screen and (max-width:1150px) {
+        .section{
+            display: none;
+        }
+        .search{
+            width: 80%;
+        }
+    }
+        .main{
+            width: 90%;
+            border: 1px solid red;
+            display: grid;
+            grid-template-columns: 1fr;
+            margin: auto;
+        }
+        .left-container{
+             display: flex;
+             justify-content: space-around;
+             margin: 30px 0px;
+             background-color: #90A4AE;
+        }
+        #filter1 , #filter2 , #filter3{
+            font-size: 20px;
+            padding: 10px 15px;
+            border-radius: 7px;
+        }
+
+        .right-container{
+             display: grid;
+             grid-template-columns: repeat(4,1fr);
+             gap: 15px;
+             border: 1px solid;
+            margin: auto;
+            padding: 30px;
+            justify-content: space-between;
+            background-color: #80CBC4;
+        }
+        .right-container > div{
+           text-align: center;
+            width: 100%;
+           margin: auto;
+           border-radius: 6px ;
+           padding: 0px 10px ;
+           box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+           background-color: #E0E0E0;
+        }
+        .right-container > div > img{
+            width: 80%;
+            display: block;
+            margin: auto;
+        }
+        .right-container > div > img:hover{
+           width: 90%;
+           transition:  width 1s ease-out ;
+        }
+        .right-container > div > h2,.right-container > div > p ,.right-container > div > h3 {
+            margin-bottom: 10px;
+        }
+        .right-container > div > button{
+            font-size: 18px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            background-color: lightslategray;
+            color: antiquewhite;
+        }
+        @media screen and (min-width : 800px) and (max-width : 1200px) {
+            .section{
+                display: none;
+            }
+            .nav{
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+        
+        @media screen and (min-width : 500px) and (max-width : 799px) {
+            .section{
+                display: none;
+            }
+            .nav{
+                display: flex;
+                justify-content: space-between;
+            }
+            .right-container{
+             display: grid;
+             grid-template-columns: repeat(3,1fr);
+             gap: 15px;
+        }
+        }
+        @media screen and (max-width : 499px) {
+            .section{
+                display: none;
+            }
+            .nav{
+                display: flex;
+                justify-content: space-between;
+            }
+            .right-container{
+             display: grid;
+             grid-template-columns: repeat(2,1fr);
+             gap: 15px;
+        }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <img src="./_ Circle Round Minimal Initials Photography Logo Video.gif" alt="">
+
+        <div class="section">
+            <a href="">NEW ARRIVALS</a>
+            <a href="">MEN'S</a>
+            <a href="">WOMAN'S</a>
+            <a href="">KID'S</a>
+            <a href="">CLOTHING</a>
+            <a href="">FAN SHOP</a>
+            <a href="">RELEASE</a>
+            <a href="">BRANDS</a>
+            <a href="">SALE</a>
+        </div>
+        <div class="search-icon">
+            <div class="search">
+                <input placeholder="Search Here" type="text" >
+                <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
+            <div class="icon">
+                <a href=""> <i class="fa-regular fa-heart"></i></a>
+               <a href="./Cart.html"> <i class="fa-solid fa-cart-shopping"></i></a>
+                <a href="./Signin.html"><i class="fa-solid fa-user"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="left-container">
+        <div class="sbp">
+            <h2>Sort By Price</h2>
+            <select name="" id="filter1">
+                <option value="">Sort By Price</option>
+                <option value="h2l">High To Low</option>
+                <option value="l2h">Low To High</option>
+            </select>
+        </div>
+        <div class="name">
+            <h2>Sort By Name</h2>
+            <select name="" id="filter2">
+                <option value="">Sort By Name</option>
+                <option value="ascending">Ascending</option>
+                <option value="decending">Dscending</option>
+            </select>
+        </div>
+      
+    </div>
+    <div class="main">
+   
+        <div class="right-container"></div>
+    </div>
+</body>
+<script>
+    let RightContainerEl = document.querySelector(".right-container");
+    let Filter1 = document.getElementById("filter1");
+    let Filter2 = document.getElementById("filter2");
+    let Cart = JSON.parse(localStorage.getItem("cart")) || [];
+    let API = [
+        {
+            "id" : "1",
+            "img" : "https://images.footlocker.com/is/image/EBFL2/D9336800?wid=267&hei=267&fmt=png-alpha" ,
+            "title" : "Jordan Retro 5",
+            "Disc" : "Women's Martin Sunrise/Black/Fire Red",
+            "price" : 200.00 ,
+        },
+        {
+            "id" : "2",
+            "img" : "https://images.footlocker.com/is/image/EBFL2/37758401?wid=267&hei=267&fmt=png-alpha",
+            "title" : "PUMA MB2 x Slinme",
+            "Disc" : "Men's Green/Yellow",
+            "price" :  140.00,
+        },
+        {
+            "id" : "3",
+            "img" : "https://images.footlocker.com/is/image/EBFL2/M990GL6?wid=267&hei=267&fmt=png-alpha",
+            "title" : "New Balance 990V6 D",
+            "Disc" : "Men's Gray/Castlerock",
+            "price" : 200.00,
+        },
+        {
+            "id" : "4",
+            "img" : "https://images.footlocker.com/is/image/EBFL2/D1412410?wid=267&hei=267&fmt=png-alpha",
+            "title" : "Jordan Retro 1 High OG",
+            "Disc" :"Boy's PReschool Blue/White/Gray" ,
+            "price" :  85.00 ,
+        },
+        {
+            "id" : "5",
+            "img" : "https://images.footlocker.com/is/image/EBFL2/Z2523001?wid=267&hei=267&fmt=png-alpha",
+            "title" :"Jordan AJ1 Retro Hi OG" ,
+            "Disc" : "Women's Gray/Black/White",
+            "price" :  180.00,
+        },
+        {
+            "id" : "6",
+            "img" : "https://images.footlocker.com/is/image/EBFL2/N9782001?wid=267&hei=267&fmt=png-alpha",
+            "title" : "Jordan Retro 7",
+            "Disc" : "Men's black/Red/Green",
+            "price" :  210.00,
+        },
+        {
+            "id" : "7",
+            "img" : "https://images.footlocker.com/is/image/EBFL2/37761001?wid=267&hei=267&fmt=png-alpha",
+            "title" : "PUMA MB.02",
+            "Disc" : "Boy's Grade School Green/Yellow",
+            "price" :  120.00,
+        },
+        {
+            "id" : "8",
+            "img" : "https://images.footlocker.com/is/image/EBFL2/13375041?wid=267&hei=267&fmt=png-alpha",
+            "title" : "Diadore N9002 Datails Matter",
+            "Disc" : "Men's Grey",
+            "price" :  140.00,
+        },
+        {
+            "id" : "9",
+            "img" : "https://images.footlocker.com/is/image/EBFL2/V1193901?wid=267&hei=267&fmt=png-alpha",
+            "title" : "Nike LeBron XX",
+            "Disc" : "Men's Milti",
+            "price" :  210.00,
+        },
+        {
+            "id" : "10",
+            "img" : "https://images.footlocker.com/is/image/EBFL2/B8480100?wid=267&hei=267&fmt=png-alpha",
+            "title" : "Nike Uptempo",
+            "Disc" : "Women's White/Black" ,
+            "price" : 160.00,
+        },
+        {
+            "id" : "11",
+            "img" : "https://images.footlocker.com/is/image/EBFL2/J5982041?wid=267&hei=267&fmt=png-alpha",
+            "title" : "Jordan Retro 13",
+            "Disc" : "Men's Black/Blue/White" ,
+            "price" : 200.00,
+        },
+        {
+            "id" : "12",
+            "img" : "https://images.footlocker.com/is/image/EBFL2/38866701?wid=267&hei=267&fmt=png-alpha",
+            "title" : "PUMA MB.02 Slime",
+            "Disc" : "Boys' Preschool Green",
+            'price' : 100.00,
+        },
+        {
+            "id" : "13",
+            "img" : "https://images.footlocker.com/is/image/EBFL2/N3686071?wid=267&hei=267&fmt=png-alpha",
+            "title" : "Jordan Jumpamn Pro",
+            "Disc" :"Men's Black/Gold/White" ,
+            "price" : 145.00,
+        },
+        {
+            "id" : "14",
+            "img" : "https://images.footlocker.com/is/image/EBFL2/R6952400?wid=267&hei=267&fmt=png-alpha",
+            "title" :"Jordan Retro 4" ,
+            "Disc" : "Girls' Grade School Blue/White/Red",
+            "price" :  150.00,
+        },
+        {
+            "id" : "15",
+            "img" : "https://images.footlocker.com/is/image/EBFL2/31524463?wid=267&hei=267&fmt=png-alpha",
+            "title" : "UGG Tasman",
+            "Disc" : "Men's Oliva/Tan",
+            "price" :100.00,
+        },
+        {
+            "id" : "16",
+            "img" : "https://images.footlocker.com/is/image/EBFL2/5998905?wid=267&hei=267&fmt=png-alpha",
+            "title" :"On Cloud" ,
+            "Disc" : "Women's Black",
+            "price" :  140.00,
+        },
+        {
+            "id" : "17",
+            "img" : "https://images.footlocker.com/is/image/EBFL2/14575041?wid=267&hei=267&fmt=png-alpha",
+            "title" : "Jordan Retro 13",
+            "Disc" : "Boy's Preschool Black/University Blue/White",
+            "price" : 85.00,
+        },
+        {
+            "id" : "18",
+            "img" : "https://images.footlocker.com/is/image/EBFL2/279371FT?wid=267&hei=267&fmt=png-alpha",
+            "title" : "Crocs Echo Clogs",
+            "Disc" : "Men's Grey/Atmosphere",
+            "price" :  70.00,
+        },
+        {
+            "id" : "19",
+            "img" : "https://images.footlocker.com/is/image/EBFL2/55393770?wid=267&hei=267&fmt=png-alpha",
+            "title" : "Nike Woodside II",
+            "Disc" : "men's Gold/Grey/Black",
+            "price" : 125.00 ,
+        },
+        {
+            "id" : "20",
+            "img" : "https://images.footlocker.com/is/image/EBFL2/V0788100?wid=267&hei=267&fmt=png-alpha",
+            "title" : "Nike Air Force 1 Low'07 ",
+            "Disc" : "Men's White/GreyWhite",
+            "price" :  110.00,
+        },
+        {
+            "id" : "21",
+            "img" : "https://images.footlocker.com/is/image/EBFL2/Q8564106?wid=267&hei=267&fmt=png-alpha",
+            "title" : "Jordan Retro 2",
+            "Disc" : "Boy's Preschool White/Varsity Red/Black",
+            "price" : 85.00,
+        },
+        {
+            "id" : "22",
+            "img" : "https://images.footlocker.com/is/image/EBFL2/Z5175200?wid=267&hei=267&fmt=png-alpha",
+            "title" : "Nike Air Max 90",
+            "Disc" : "Men's Beige/Orange/Blue",
+            "price" :  140.00,
+        },
+        {
+            "id" : "23",
+            "img" : "https://images.footlocker.com/is/image/EBFL2/D2776106?wid=267&hei=267&fmt=png-alpha",
+            "title" : "Jordan Retro 7",
+            "Disc" : "Boy's White/Black/Cardinal Red",
+            "price" :  85.00,
+        },
+        {
+            "id" : "24",
+            "img" : "https://images.footlocker.com/is/image/EBFL2/N1772060?wid=267&hei=267&fmt=png-alpha",
+            "title" : "Jordan Luka 1",
+            "Disc" : "Men's Black/red/Grey",
+            "price" : 110.00,
+        },
+        {
+            "id" : "25",
+            "img" : "https://images.footlocker.com/is/image/EBFL2/B1312001?wid=267&hei=267&fmt=png-alpha",
+            "title" :"Jordan Retro 1 High OG" ,
+            "Disc" : "Girl's Gray/Black/White",
+            "price" : 85.00 ,
+        },
+        {
+            "id" : "26",
+            "img" : "https://images.footlocker.com/is/image/EBFL2/Y6813?wid=267&hei=267&fmt=png-alpha",
+            "title" : "Adidas Originals Ozweego Casul Sneakers",
+            "Disc" :"Women's Beige" ,
+            "price" : 120.00,
+        },
+        {
+            "id" : "27",
+            "img" : "https://images.footlocker.com/is/image/EBFL2/CT302LA?wid=267&hei=267&fmt=png-alpha",
+            "title" : "New Balance CT 302 Shoes",
+            "Disc" : "Women's White ",
+            "price" :  100.00,
+        },
+        {
+            "id" : "28",
+            "img" : "https://images.footlocker.com/is/image/EBFL2/279376TY?wid=267&hei=267&fmt=png-alpha",
+            "title" : "Crocs Echo Clogs",
+            "Disc" : "Men's Pink/Grey",
+            "price" : 70.00,
+        },
+        {
+            "id" : "29",
+            "img" : "https://images.footlocker.com/is/image/EBFL2/V1359114?wid=267&hei=267&fmt=png-alpha",
+            "title" : "Jordan Dub Zero",
+            "Disc" : "Boy's Preschool White/Blue",
+            "price" : 80.00,
+        },
+        {
+            "id" : "30",
+            "img" : "https://images.footlocker.com/is/image/EBFL2/Z5204500?wid=267&hei=267&fmt=png-alpha",
+            "title" : "Nike Air Vapormax Plus",
+            "Disc" : "Women's Purple/Black",
+            "price" :  210.00,
+        },
+        {
+            "id" : "31",
+            "img" : "https://images.footlocker.com/is/image/EBFL2/279374EA?wid=267&hei=267&fmt=png-alpha",
+            "title" : "Cros Echo Clogs",
+            "Disc" : "Men's Grey/Black",
+            "price" :  70.00,
+        },
+        {
+            "id" : "32",
+            "img" : "https://images.footlocker.com/is/image/EBFL2/HQ1901?wid=233&hei=233&fmt=png-alpha",
+            "title" : "Adidas Original HELLO KITTY STAN SMITH",
+            "Disc" : "Girl's Grade School White/Red",
+            "price" :  90.00,
+        },
+        {
+            "id" : "33",
+            "img" : "https://images.footlocker.com/is/image/EBFL2/B8027001?wid=233&hei=233&fmt=png-alpha",
+            "title" : "Nike Air Max Plus",
+            "Disc" : "Boy's Grade School Black/Purple",
+            "price" : 145.00,
+        },
+        {
+            "id" : "34",
+            "img" : "https://images.footlocker.com/is/image/EBFL2/D6149004?wid=233&hei=233&fmt=png-alpha",
+            "title" : "Nike Zoom Freak 4",
+            "Disc" : "Men's White/Grey/Black",
+            "price" : 130.00,
+        },
+        {
+            "id" : "35",
+            "img" : "https://images.footlocker.com/is/image/EBFL2/Q8646800?wid=233&hei=233&fmt=png-alpha",
+            "title" : "Nike LeBron XX",
+            "Disc" : "Boy's Grade School Green/Apple/Reflect Silver/White",
+            "price" : 160.00,
+        },
+        {
+            "id" : "36",
+            "img" : "https://images.footlocker.com/is/image/EBFL2/R7883101?wid=233&hei=233&fmt=png-alpha",
+            "title" : "Nike Air Force 1 Shadow",
+            "Disc" : "Women's Sail/Silver?Citron Tint",
+            "price" :  130.00,
+        },
+        {
+            "id" : "37",
+            "img" : "https://images.footlocker.com/is/image/EBFL2/V2629100?wid=233&hei=233&fmt=png-alpha",
+            'title' : "Jordan AJ 11 CMFT Low",
+            "Disc" : "Women's White/Blue",
+            "price" :  130.00,
+        },
+        {
+            "id" : "38",
+            "img" : "https://images.footlocker.com/is/image/EBFL2/Q0374100?wid=233&hei=233&fmt=png-alpha",
+            "title" : "Nike Air Max 90",
+            "Disc" : "Women's Summit White/Black",
+            "price" :  130.00,
+        },
+        {
+            "id" : "39",
+            "img" : "https://images.footlocker.com/is/image/EBFL2/D9625100?wid=233&hei=233&fmt=png-alpha",
+            "title" : "Nike Air Force 1 07 Mid",
+            "Disc" : "Women's White",
+            "price" :  120.00,
+        },
+        {
+            "id" : "40",
+            "img" : "https://images.footlocker.com/is/image/EBFL2/284542Y3?wid=233&hei=233&fmt=png-alpha",
+            "title" : "Crocs Echo Clog Marble",
+            "Disc" : "Men's Tan/Multi",
+            "price" :  75.00,
+        },
+        {
+            "id" : "41",
+            "img" : "https://images.footlocker.com/is/image/EBFL2/B8028001?wid=233&hei=233&fmt=png-alpha",
+            "title" : "Nike Air Max Plus",
+            "Disc" : "Boy's Preschool Black/Purple",
+            "price" :  120.00,
+        },
+        {
+            "id" : "42",
+            "img" : "https://images.footlocker.com/is/image/EBFL2/B1313001?wid=233&hei=233&fmt=png-alpha",
+            "title" : "Jordan Retro 1 High OG",
+            "Disc" : "Girl's Toddler Grey/Black/White",
+            "price" :  70.00,
+        },
+        {
+            "id" : "43",
+            "img" : "https://images.footlocker.com/is/image/EBFL2/D9514107?wid=233&hei=233&fmt=png-alpha",
+            "title" : "Jordan Zion 2",
+            "Disc" : "Boy's Grade School White/Volt/Black",
+            "price" : 90.00,
+        },
+        {
+            "id" : "44",
+            "img" : "https://images.footlocker.com/is/image/EBFL2/H2987002?wid=233&hei=233&fmt=png-alpha",
+            "title" : "Nike Court Vision Low",
+            "Disc" : "Men's Black",
+            "price" : 75.00,
+        },
+        {
+            "id" : "45",
+            "img" : "https://images.footlocker.com/is/image/EBFL2/Q8404002?wid=233&hei=233&fmt=png-alpha",
+            "title" : "Jordan Max Aura 4",
+            "Disc" : "Boy's Grade School White/Metllic/Black",
+            "price" :  95.00,
+        },
+        {
+            "id" : "46",
+            "img" : "https://images.footlocker.com/is/image/EBFL2/A62WQ001?wid=233&hei=233&fmt=png-alpha",
+            "title" : 'Tmberland 6" Premium Waterproof Boots',
+            "Disc" : "Boy's Toddler Black",
+            "price" : 69.00,
+        },
+        {
+            "id" : "47",
+            "img" : "https://images.footlocker.com/is/image/EBFL2/GY2774?wid=233&hei=233&fmt=png-alpha",
+            "title" : "Adidas Dame 8",
+            "Disc" : "Men's Black/Gold",
+            "price" :  130.00,
+        },
+        {
+            "id" : "48",
+            "img" : "https://images.footlocker.com/is/image/EBFL2/Z0907102?wid=233&hei=233&fmt=png-alpha",
+            "title" : "Jordan AJ 11 Comfort Low",
+            "Disc" : "Boy's Grade School White/Black/Red",
+            "price" :  100.00,
+        },
+        {
+            "id" : "49",
+            "img" : "https://images.footlocker.com/is/image/EBFL2/Q8431005?wid=233&hei=233&fmt=png-alpha",
+            "title" : "Nike Jumpman To Trey",
+            "Disc" : "Boy's Grade School Light Graphite/Cement Grey",
+            "price" : 115.00,
+        },
+        {
+            "id" : "50",
+            "img" : "https://images.footlocker.com/is/image/EBFL2/HP9733?wid=233&hei=233&fmt=png-alpha",
+            "title" : "Adidas Original NMD R1 Casual Sneakers",
+            "Disc" : "Women's Yellow/Black",
+            "price" : 150.00,
+        },
+        {
+            "id" : "51",
+            "img" : "https://images.footlocker.com/is/image/EBFL2/Q1943101?wid=233&hei=233&fmt=png-alpha",
+            "title" : "Nike Ginnes Immortality",
+            "Disc" : "Boy's Grade School White/Black/Grey",
+            "price" :  75.00,
+        },
+        {
+            "id" : "52",
+            "img" : "https://images.footlocker.com/is/image/EBFL2/Z5205500?wid=233&hei=233&fmt=png-alpha",
+            "title" : "Nike Air Vapormax 2021 Flyknit",
+            "Disc" : "Women's Multi",
+            'price' :  210.00,
+        },
+        {
+            "id" : "53",
+            "img" : "https://images.footlocker.com/is/image/EBFL2/D7782001?wid=233&hei=233&fmt=png-alpha",
+            "title" : "Nike Court Borough Mid 2",
+            "Disc" : "Boy's Grade School Black",
+            "price" :  70.00,
+        },
+        {
+            "id" : "54",
+            "img" : "https://images.footlocker.com/is/image/EBFL2/X3736300?wid=233&hei=233&fmt=png-alpha",
+            "title" : "Nike Max Zero Waffle 1",
+            "Disc" : "Men's Golden Moss/Black/Multi",
+            "price" :  115.00,
+        },
+        {
+            "id" : "55",
+            "img" : "https://images.footlocker.com/is/image/EBFL2/M0013101?wid=233&hei=233&fmt=png-alpha",
+            "title" : "Nike Air Max Dawn",
+            "Disc" : "Men's White/Green/Black",
+            "price" :  115.00,
+        },
+        {
+            "id" : "56",
+            "img" : "https://images.footlocker.com/is/image/EBFL2/Q0553004?wid=233&hei=233&fmt=png-alpha",
+            "title" : "Nike Zoom Freak 4 SE",
+            "Disc" : "Boy's Grade School White",
+            "price" :  105.00,
+        },
+        {
+            "id" : "57",
+            "img" : "https://images.footlocker.com/is/image/EBFL2/HP3012?wid=233&hei=233&fmt=png-alpha",
+            "title" : "Adidas Original NMD R1 Casual Sneakers",
+            "Disc" : "Women's White/Green/Multi",
+            "price" :  150.00,
+        },
+        {
+            "id" : "58",
+            "img" : "https://images.footlocker.com/is/image/EBFL2/19166702?wid=233&hei=233&fmt=png-alpha",
+            "title" : "PUMA Defy Mid Vrsity",
+            "Disc" : "Women's White/Metallic Gold",
+            "price" : 110.00,
+        },
+        {
+            "id" : "59",
+            "img" : "https://images.footlocker.com/is/image/EBFL2/GZ9794?wid=233&hei=233&fmt=png-alpha",
+            "title" : "Adidas Original Rivalry Low",
+            "Disc" : "Men's White/Blue",
+            "price" :  100.00,
+        },
+        {
+            "id" : "60",
+            "img" : "https://images.footlocker.com/is/image/EBFL2/Q8647100?wid=233&hei=233&fmt=png-alpha",
+            "title" : "NikeWitness VII Basketball Shoe",
+            "Disc" : "Boy's Preschool White/Metallic Silver/Black",
+            "price" : 85.00,
+        }
+    ]
+  
+function Display(data){
+   RightContainerEl.innerHTML = "";
+    data.forEach((ele)=>{
+            let Div = document.createElement("div");
+            let image = document.createElement("img");
+            let Title = document.createElement("h2");
+            let Disc = document.createElement("p");
+            let Price = document.createElement("h3");
+            let Button = document.createElement("button")
+
+            image.src = ele.img;
+            Title.innerText = ele.title ;
+            Disc.innerText = ele.Disc;
+            Price.innerText = `$ ${ele.price}`;
+            Button.innerText = "Add To Cart"
+
+            Button.addEventListener("click",()=>{
+                Cart.push(ele);
+                localStorage.setItem("cart",JSON.stringify(Cart))
+
+                alert("Added to the cart")
+            })
+
+            Div.append(image,Title,Disc,Price ,Button)
+            RightContainerEl.append(Div);
+    })
+}
+Display(API)
+
+    Filter1.addEventListener("change",()=>{
+         console.log( Filter1.value)
+        if(Filter1.value == ""){
+            let filtered = API.sort((a,b)=>{
+            if(a.id > b.id ){
+                return 1
+            }
+            if(a.id < b.id ){
+                return -1;
+            }
+            return 0
+        })
+        Display(filtered)
+        }
+        else if(Filter1.value == "l2h"){
+                let filtered =  API.sort((a,b)=>{
+                return a.price - b.price
+            })
+            Display(filtered)
+        }
+         else if(Filter1.value == "h2l"){
+            let filtered = API.sort((a,b)=>{
+               return b.price - a.price
+            })
+            Display(filtered)
+        }
+        
+    });
+
+  Filter2.addEventListener("change", ()=>{
+    console.log(Filter2.value)
+    if(Filter2.value == ""){
+        let filtered = API.sort((a,b)=>{
+            if(a.id > b.id ){
+                return 1
+            }
+            if(a.id < b.id ){
+                return -1;
+            }
+            return 0
+        })
+        Display(filtered)
+    }
+    if(Filter2.value == "ascending"){
+        let filtered = API.sort((a,b)=>{
+            if(a.title > b.title ){
+                return 1
+            }
+            if(a.title < b.title ){
+                return -1;
+            }
+            return 0
+        })
+        Display(filtered)
+    }
+    if(Filter2.value == "decending"){
+        let filtered = API.sort((a,b)=>{
+            if(a.title < b.title ){
+                return 1
+            }
+            if(a.title > b.title ){
+                return -1;
+            }
+            return 0
+        })
+        Display(filtered)
+    }
+  })
+
+</script>
+</html>
