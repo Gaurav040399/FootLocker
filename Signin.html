@@ -162,13 +162,32 @@
             }
           
         }
+        .container > p{
+          margin-top: 20px;
+          font-size: 15px;
+          color: whitesmoke;
+        }
+        .container > p > a{
+          margin-left: 7px;
+          text-decoration: none;
+          color: goldenrod;
+        }
+        .container > p > a:hover{
+          color: rgb(180, 144, 54);
+        }
+        .head{
+          color: white;
+        }
     </style>
   </head>
   <body>
     <div class="nav">
        <img src="./_ Circle Round Minimal Initials Photography Logo Video.gif" alt="">
+       <div class="head">
+        <h1>Please Sign In and Explore Fashion World</h1>
+       </div>
 
-        <div class="section">
+        <!-- <div class="section">
             <a href="">NEW ARRIVALS</a>
             <a href="">MEN'S</a>
             <a href="">WOMAN'S</a>
@@ -178,7 +197,7 @@
             <a href="">RELEASE</a>
             <a href="">BRANDS</a>
             <a href="">SALE</a>
-        </div>
+        </div> -->
         <div class="search-icon">
             <div class="icon">
                 <i class="fa-regular fa-heart"></i>
@@ -197,7 +216,7 @@
       </div>
       <div class="container">
         <div class="heading">
-          <a href="./signUp.html">Sign Up</a>
+          <!-- <a href="./signUp.html">Sign Up</a> -->
           <a href="./Signin.html">Sign In</a>
         </div>
         <form>
@@ -221,6 +240,8 @@
           </div>
           <input type="submit" value="Sign in" />
         </form>
+        <p>Don't have an Account? <a href="./signUp.html">Sign Up Here</a></p>
+        
       </div>
     </div>
   </body>
@@ -240,6 +261,8 @@
                 }else{
                     alert("Password Invalid");
                 }
+            }else{
+              alert("Username Invalid")
             }
            })
         })
