@@ -45,7 +45,7 @@
         .search > input{
             font-size: 10px;
             padding: 5px 10px;
-            border-radius: 16px;
+            /* border-radius: 16px; */
             border: none;
            
         }
@@ -63,12 +63,14 @@
             color: white;
             margin-left: 10px;
         }
-        .icon > i{
+        .icon >a> i{
             margin: 8px;
             font-size: 20px;
             padding-bottom: 6px;
+            text-decoration: none;
+            color: whitesmoke;
         }
-        .icon > i:hover{
+        .icon >a> i:hover{
             color:maroon;
             border-bottom: 5px solid white;
         }
@@ -326,6 +328,7 @@
        .footer > .bottom-part > div > h3{
         color: white;
         margin: 20px 0px;
+        margin-bottom: 35px;
        }
        .footer > .bottom-part > div > a{
         display:block;
@@ -340,9 +343,9 @@
       .social-media > h3 , .payment > h3{
         color: white;
         margin-top: 20px;
-        margin-bottom: 20px;
+        margin-bottom: 35px;
       }
-      .social-media > i{
+      .social-media >a> i{
         background-color:black;
         color: white;
         font-size: 30px;
@@ -350,7 +353,7 @@
         margin-right: 20px;
         margin-bottom: 20px;
       }
-      .social-media > i:hover{
+      .social-media >a> i:hover{
         border-bottom: 4px solid;
       }
       .payment > img{
@@ -380,12 +383,17 @@
         border-radius: 50%;
         border: 2px solid white;
       }
+      .padd{
+        padding-bottom: 15px;
+        border-bottom: 4px solid red;
+       
+      }
     
     </style>
 </head>
 <body>
     <div class="nav">
-        <img src="./_ Circle Round Minimal Initials Photography Logo Video.gif" alt="">
+        <img src="./_ Circle Round Minimal Initials Photography Logo Video.gif" alt="" id="logo">
 
         <div class="section">
             <a href="./New Arrivals.html">NEW ARRIVALS</a>
@@ -404,9 +412,9 @@
                 <i class="fa-solid fa-magnifying-glass"></i>
             </div>
             <div class="icon">
-                <i class="fa-regular fa-heart"></i>
-                <i class="fa-solid fa-cart-shopping"></i>
-                <i class="fa-solid fa-user"></i>
+                <a href=""><i class="fa-regular fa-heart"></i></a>
+                 <a href="./Cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a href=""><i class="fa-solid fa-user"></i></a>
             </div>
         </div>
     </div>
@@ -569,7 +577,7 @@
         </div>
         <div class="bottom-part">
             <div>
-                <h3>ABOUT FOOTER LOCKER</h3>
+                <h3><span class="padd">AB</span>OUT FOOTER LOCKER</h3>
                 <a href="#">About Us</a>
                 <a href="">Accessibility Statement</a>
                 <a href="#">Career Opportunities</a>
@@ -584,7 +592,7 @@
                 <a href="#">Terms Of Use</a>
             </div>
             <div>
-                <h3>CUSTOMER SERVICE</h3>
+                <h3><span class="padd">CU</span>STOMER SERVICE</h3>
                 <a href="#">Contact Us</a>
                 <a href="#">Contact Us</a>
                 <a href="#">Ordering Help</a>
@@ -597,7 +605,7 @@
                 <a href="#">Check Gift Card Balance</a>
             </div>
             <div>
-                <h3>QUICK LINKS</h3>
+                <h3><span class="padd">QU</span>ICK LINKS</h3>
                 <a href="#">Store Locator</a>
                 <a href="#">Text Sign Up</a>
                 <a href="#">Launch 101</a>
@@ -612,15 +620,16 @@
             </div>
             <div>
                 <div class="social-media">
-                    <h3>SOCIAL</h3>
-                    <i class="fa-brands fa-square-facebook"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-youtube"></i>
+                    <h3><span class="padd">SO</span>CIAL</h3>
+                    <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                   <a href="https://www.youtube.com/channel/UCvqKA3l-W-mGM9z8QQHXLTg"> <i class="fa-brands fa-youtube"></i></a>
+                   <a href="https://www.linkedin.com/in/gaurav-asode-31444b171/"><i class="fa-brands fa-linkedin"></i></a>
                     
                 </div>
                 <div class="payment">
-                    <h3>PAYMENT METHODS</h3>
+                    <h3><span class="padd">PA</span>YMENT METHODS</h3>
                     <img src="https://images.footlocker.com/content/dam/final/footlockereurope/Online_activations/backpages/ic_amex.png" alt="">
                     <img src="https://images.footlocker.com/content/dam/final/footlockereurope/Online_activations/backpages/ic_discover.png" alt="">
                     <img src="https://images.footlocker.com/content/dam/final/footlockereurope/Online_activations/backpages/ic_mastercard.png" alt="">
@@ -641,4 +650,7 @@
         </div>
     </div>
 </body>
+<script>
+   
+</script>
 </html>
