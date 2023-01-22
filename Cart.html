@@ -246,17 +246,20 @@
         border-bottom: 4px solid red;
        
       }
-      /* #msg{
+       /* #msg{
         display: inline;
         width: 200px;
         height: 200px;
         background-color: green;
         position: fixed;
         z-index: -1000;
-      }
-      #msg >a > i{
-        font-size: 50px;
       } */
+      .msg {
+        font-size: xx-large;
+        text-align: center;
+        font-weight: bold;
+        margin: 20px 0;
+      } 
       
     </style>
   </head>
@@ -291,8 +294,10 @@
         </div>
       </div>
     </div>
+    <div ><h1 class="msg">Welcome to the Cart</h1></div>
     <div class="main">
-      <h1 class="cal-total">Total Price :- <span id="total">0</span></h1>
+      <h1 class="cal-total">Total Price :- <span id="total"> 0</span></h1>
+      <h1 class="cal-total">Total Products :- <span id="total-p"> 0</span></h1>
       <div class="right-container"></div>
     </div>
     <div class="footer">
@@ -404,7 +409,8 @@
 
     function Display(data) {
       RightContainerEl.innerHTML = "";
-
+      document.getElementById("total-p").innerText = data.length;
+      let msg = document.querySelector(".msg")
       data.forEach((ele, index) => {
         let Div = document.createElement("div");
         let image = document.createElement("img");
@@ -414,7 +420,7 @@
         let Increment = document.createElement("button");
         let quantity = document.createElement("button");
         let Decrement = document.createElement("button");
-        let Button = document.createElement("button");
+        let Button = document.createElement("button"); 
 
         image.src = ele.img;
         Title.innerText = ele.title;
@@ -460,6 +466,16 @@
         );
         RightContainerEl.append(Div);
       });
+      let total = document.querySelector("#total");
+    let sum = 0;
+    for (let i = 0; i < Cart.length; i++) {
+      sum += Cart[i].price * Cart[i].quantity;
+    }
+    total.textContent = sum;
+    if(total.textContent == 0){
+      alert("Your Cart Is empty");
+      msg.innerText = "Your cart is Empty Please add some Product";
+    }
     }
     Display(Cart)
 
@@ -468,11 +484,6 @@
       window.location.href = "./index.html";
     });
 
-    let total = document.querySelector("#total");
-    let sum = 0;
-    for (let i = 0; i < Cart.length; i++) {
-      sum += Cart[i].price * Cart[i].quantity;
-    }
-    total.textContent = sum;
+  
   </script>
 </html>
