@@ -1,4 +1,4 @@
-# minor-throne-2520
+# FootLocker
 
 # [FootLocker](https://dancing-tarsier-2de857.netlify.app/index.html)
 
